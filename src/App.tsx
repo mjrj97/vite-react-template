@@ -8,7 +8,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Navigate to="/home" replace />} />
       <Route path="/home" element={<HomePage />} />
-      <Route path="*" element={<>This page doesn't exist</>} />
+      <Route path="*" element={<>This page doesn&apos;t exist</>} />
     </Routes>
   );
 }
