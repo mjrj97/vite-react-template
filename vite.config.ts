@@ -11,6 +11,10 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  build: {
+    minify: 'esbuild',
+    cssMinify: true,
+  },
   server: { host: 'localhost', port: 3000 },
   test: {
     globals: true,

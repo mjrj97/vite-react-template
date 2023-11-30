@@ -4,12 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "vite --open --mode development",
-    "build": "cross-env NODE_ENV=production vite build",
+    "start": "vite --mode development --open",
+    "build": "vite --mode production build",
     "lint": "eslint . --fix --cache",
     "test": "vitest",
     "prettier": "prettier . --write **/*.{js,ts,tsx}",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "analyze": "vite-bundle-visualizer --open"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -27,7 +28,6 @@
     "@typescript-eslint/parser": "^6.13.1",
     "@vitejs/plugin-react": "^4.2.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
-    "cross-env": "^7.0.3",
     "cross-fetch": "^4.0.0",
     "eslint": "^8.54.0",
     "eslint-config-prettier": "^9.0.0",
@@ -41,6 +41,7 @@
     "prettier": "^3.1.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.4",
+    "vite-bundle-visualizer": "^0.11.0",
     "vite-plugin-mkcert": "^1.17.1",
     "vitest": "^0.34.6"
   }
